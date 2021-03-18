@@ -9,19 +9,19 @@
 // 1
 // "DONE!"
 
-// function countDown(num){
-//   let timer = setInterval(function() {
-//     num--;
-//     if(num <= 0){
-//       clearInterval(timer);
-//       console.log('DONE!')
-//     }
-//     else {
-//       console.log(num)
-//     }
-//   }, 1000)
-// }
-// countDown(4)
+function countDown(num){
+  let timer = setInterval(function() {
+    num--;
+    if(num <= 0){
+      clearInterval(timer);
+      console.log('DONE!')
+    }
+    else {
+      console.log(num)
+    }
+  }, 1000)
+}
+countDown(4)
 
 
 
@@ -34,18 +34,18 @@
 // every 1000 milliseconds and each time that a random number is picked, add 1 to a counter. 
 //If the number is greater than .75, stop the timer and console.log the number of tries it took before we found a number greater than .75.
 
-// function randomGame(){
-//   let num;
-//   let counter = 0;
-//   let timer = setInterval(function(){
-//     num = Math.random();
-//      console.log('num => ', num)
-//     counter++;
-//     if(num > .75) {
-//       clearInterval(timer);
-//       console.log(`It took ${counter} try/tries.`)
-//     }
-//   },1000)
-// }
+function randomGame(){
+  let num;
+  let counter = 0;
+  let timer = setInterval(function(){
+    num = Math.random();
+     console.log('num => ', num)
+    counter++;
+    if(num > .75) {
+      clearInterval(timer);
+      console.log(`It took ${counter} try/tries.`)
+    }
+  },1000)
+}
 
-// randomGame()
+randomGame()
